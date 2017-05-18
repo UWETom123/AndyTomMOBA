@@ -33,3 +33,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 /AndyTomMOBA/Library
+/AndyTomMOBA/Temp/UnityVS_obj/Debug/*.cache
