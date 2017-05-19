@@ -11,14 +11,34 @@ public class Hero : MonoBehaviour {
     public int m_health;
     public int m_damage;
 
-    public Texture2D m_heroSprite;
+    public enum m_heroType
+    {
+        Bully,
+        Nerd,
+        Jock
+    }
+
+    public m_heroType m_myHeroType;
+
+    public Sprite m_heroSprite;
 
     public float m_movementSpeed;
     public float m_jumpStrength;
+    [System.Serializable]
+    public struct m_heroStats
+    {
+        public int m_heroXP;
+        public int m_heroGold;
+        public int m_heroKills;
+        public int m_heroAssits;
+        public int m_heroHealing;
+        public int m_heroDamage;
+    }
 
     public Ability[] m_heroAbilities;
 	// Use this for initialization
 	void Start () {
+        gameObject.GetComponent<SpriteRenderer>().sprite = m_heroSprite;
 		
 	}
 	
