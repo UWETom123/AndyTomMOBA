@@ -11,6 +11,17 @@ public class Hero : MonoBehaviour {
     public int m_health;
     public int m_damage;
 
+    public enum m_heroStatus
+    {
+        Slowed,
+        Stunned,
+        Default,
+        DamageAmplified,
+        HealthAmplified
+    }
+
+    public m_heroStatus m_myHeroStatus;
+
     public enum m_heroType
     {
         Bully,
